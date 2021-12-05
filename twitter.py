@@ -15,8 +15,8 @@ class Twitter:
     covid=0
     '''
     def __init__(self):
-        self.auth = tweepy.OAuthHandler("SvX1COY5LDLBSXgT0zFZ8Q5T3", "25urRNXrihwPw9Z6kd1FnWj7KQasqG0u0GrHhznoH9bqVfCyU3")
-        self.auth.set_access_token("1433793212263682071-FsDVpYfUpf5Hd1nQYzkMEDOuJPvOO2", "veLak9EPx6EyxVlM4w0LsEDKgPLejEPXkkivJs2DlM0Ss")
+        self.auth = tweepy.OAuthHandler("UFKPrZYXM1K4d7ePghFdSRS45", "9bQKv3CrRehpY0hUTM3eZ9DnbaRr8xEjBPqQdXQWVSmp6rD6Y3")
+        self.auth.set_access_token("1432544818358538241-fLcn8NmPWrtjUNTRZlHPA4bN4rAJ4f", "hRlaOyH3Mw1AY10luh2zlM74X0l6uH2ihGq85o0z4uC2Z")
         self.api = tweepy.API(self.auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 
     def _meet_basic_tweet_requirements(self,tweet):
