@@ -85,8 +85,8 @@ class Twitter:
         :return: List
         '''
         replies=[]
+        reply_count = 0
         for tweet in tweepy.Cursor(self.api.search,q='to:'+username, timeout=999999, tweet_mode='extended', since_id=tweetId).items(3000):
-            reply_count = 0
             if (reply_count>10):
                 break
             if hasattr(tweet, 'in_reply_to_status_id_str'):
